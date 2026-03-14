@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang =  "en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hospawtality is a homely resort for your little furry friends to relax and feel safe while you're away.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="pet, dog, cat, hotel, animal, pets, boarding">
+    <meta name="author" content="Ashley Flores">
+    <title>Placeholder</title>
+    </head>
+    <header>
+        <h1>Placeholder</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <body>
+        
+
+    </body>
+    <footer>
+        <p>placeholder text</p>
+    </footer>
+</html>
