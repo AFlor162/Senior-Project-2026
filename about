@@ -18,12 +18,63 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">Home</a></li>
             </ul>
-
         </nav>
     </header>
     <body>
-        
-
+        <h2>Our team</h2>
+        <p>placeholder</p>
+        <section id = "leadership">
+            <section class="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+            <section class="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+        </section>
+        <section class="employees">
+            <section class ="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+            <section class ="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+            <section class ="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+            <section class ="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+            <section class ="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+            <section class ="staff">
+                <h3>Staff name</h3>
+                <img src="/">
+                <p>job title</p>
+                <p>fun personal description</p>
+            </section>
+        </section>
     </body>
     <footer>
         <p>placeholder text</p>
