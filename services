@@ -22,8 +22,18 @@
         </nav>
     </header>
     <body>
-        
+        <section id="boarding">
 
+        </section>
+        <section id = "daycare">
+
+        </section>
+        <section id ="grooming">
+
+        </section>
+        <section id= "extras">
+
+        </section>
     </body>
     <footer>
         <p>placeholder text</p>
