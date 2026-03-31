@@ -349,9 +349,14 @@ h1 {
  }
 
  section #introduction img{
-   width:50%;
+   width:98%;
+   left:8px;
    height:auto;
-   padding:20px;
+   position:relative;
+ }
+
+ body section{
+   padding: 2px 20px 20px 20px;
  }
 
  #introduction {
@@ -367,14 +372,18 @@ h1 {
  }
 
 
-
  #events {
    display:flex;
    flex-direction:column;
  }
 
+ #events img{
+   width:75%;
+   height:auto;
+ }
 
-  footer {
+
+footer {
     margin-top:50px;
     padding: 20px;
     font-size: 1em;
