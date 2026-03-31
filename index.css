@@ -268,7 +268,7 @@ h1 {
 #bannerimg{
    width:100%;
    height:50%;
-   padding-top:25px;
+   padding-top:10px;
 }
 
 nav {
@@ -280,7 +280,7 @@ nav {
 nav ul {
    list-style-type: none;
    margin:0;
-   padding:0;
+   padding:5;
    overflow:hidden;
    background-color:var(--primary-red);
 
@@ -291,6 +291,7 @@ ul{
 
 ul li{
    display:inline;
+   padding-bottom: 5px;
 }
 
 nav ul li a{
@@ -299,31 +300,105 @@ nav ul li a{
    text-align: center;
    color: var(--cream);
    padding: 25px;
+   font-weight: bold;
+}
+
+ul li a:hover{
+   color:var(--primary-orange);
 }
 
 header{
-   padding:25px;
    background-color: var(--primary-red);
+   padding: 25px;
 }
 
 h1 {
     position:absolute;
     z-index: 9999;
     color:var(--cream);
-    top: 20px;
+    top: 15px;
     left: 25%;
     transform: translateX(-50%);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3em;
     letter-spacing: .15em;
 }
 
 .menu-icon{
-    display: block;
-    width: 50px;
-    cursor: pointer;
+   position:absolute;
+   display: block;
+   width: 75px;
+   cursor: pointer;
+   transform: translateY(-25px);
 }
 
+ #maincontent {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ section h2{
+   display:block;
+   background-color: var(--primary-red);
+   color:var(--cream);
+   padding:25px;
+   text-align: center;
+   font-size: 2em;
+   font-weight: bold;
+   border:5px solid var(--cream);
+ }
+
+ section #introduction img{
+   width:50%;
+   height:auto;
+   padding:20px;
+ }
+
+ #introduction {
+   display:flex;
+   flex-direction:column;
+ }
+
+ #introduction p{
+   padding:15px;
+   line-height: 1.5em;
+   font-size: 1em;
+   text-align:left;
+ }
+
+
+
+ #events {
+   display:flex;
+   flex-direction:column;
+ }
+
+
+  footer {
+    margin-top:50px;
+    padding: 20px;
+    font-size: 1em;
+    text-align: left;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #6f3927;
+    color: var(--cream);
+ }
+
+ footer p{
+    padding-top:20px;
+ }
+
+ footer ul{
+    display:flex;
+ }
+
+ footer ul li{
+    width:25px;
+    padding:10px;
+    height:auto;
+    text-decoration: none;
+ }
 
 
 }
