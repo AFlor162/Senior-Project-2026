@@ -81,10 +81,17 @@ html {
 
 h1, h2, h3, li {
     font-family: 'Mona Sans', sans-serif;
+    color:var(--primary-red);
+}
+
+h2, h3{
+   font-style: italic;
 }
 
 p {
     font-family: 'Hubot Sans', sans-serif;
+    color: var(--primary-red);
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
@@ -350,7 +357,7 @@ h1 {
 
  section #introduction img{
    width:98%;
-   left:8px;
+   left:6px;
    height:auto;
    position:relative;
  }
