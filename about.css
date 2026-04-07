@@ -1,0 +1,303 @@
+/*Ashley Flores*/
+
+/*CSS reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Code Start*/
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('Mona-Sans.woff2') format('woff2 supports variations'),
+       url('Mona-Sans.woff2') format('woff2-variations'); 
+  font-weight: 200 900; 
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: 'Hubot Sans';
+  src: url('./fonts/Hubot-Sans.woff2') format('woff2 supports variations'),
+       url('./fonts/Hubot-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+:root {
+    --primary-red: #6f3927;
+    --primary-orange: #e19c5e;
+    --cream: #f0e1c5;
+}
+
+html {
+    background-color:var(--cream);
+}
+
+h1, h2, h3, li {
+    font-family: 'Mona Sans', sans-serif;
+    color:var(--primary-red);
+}
+
+h2, h3{
+   font-style: italic;
+}
+
+p {
+    font-family: 'Hubot Sans', sans-serif;
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+footer p{
+   color: #f0e1c5;
+}
+
+@media only screen and (max-width: 768px) {
+
+/* Nav bar start - Mobile */
+.nav {
+    position: relative;
+    background: var(--primary-red);
+    padding: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-icon  {
+    margin: 6px 0;
+    transition: 0.3s;
+    padding-left:7px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background: var(--primary-red);
+}
+
+.menu li {
+    border-bottom: 1px solid var(--primary-red);
+}
+
+.menu li a {
+    display: block;
+    padding: 12px;
+    color: var(--cream);
+    text-decoration: none;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+
+header {
+    position: relative;
+}
+
+h1 {
+    position:absolute;
+    z-index: 9999;
+    color:var(--cream);
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: .15em;
+}
+
+/* Nav bar end - Mobile */
+
+img {
+    width:150px;
+    height:150px;
+    object-fit: cover;
+}
+
+ footer {
+    margin-top:50px;
+    padding: 20px;
+    font-size: .75em;
+    text-align: left;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #6f3927;
+    color: #f0e1c5;
+ }
+
+ footer p{
+    padding-top:20px;
+ }
+
+ footer ul{
+    display:flex;
+ }
+
+ footer ul li{
+    width:25px;
+    padding:10px;
+    height:auto;
+    text-decoration: none;
+ }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* Nav bar start - Larger devices */
+
+#menu-toggle{
+   display: none;
+}
+
+#bannerimg{
+   width:100%;
+   height:50%;
+   padding-top:10px;
+}
+
+nav {
+   display:block;
+   background-color: var(--primary-red);
+   padding-bottom:30px;
+}
+
+nav ul {
+   list-style-type: none;
+   margin:0;
+   padding:5;
+   overflow:hidden;
+   background-color:var(--primary-red);
+
+}
+ul{
+   float:right;
+}
+
+ul li{
+   display:inline;
+   padding-bottom: 5px;
+}
+
+nav ul li a{
+   font-size: 1.5em;
+   text-decoration: none;
+   text-align: center;
+   color: var(--cream);
+   padding: 25px;
+   font-weight: bold;
+}
+
+ul li a:hover{
+   color:var(--primary-orange);
+}
+
+header{
+   background-color: var(--primary-red);
+   padding: 25px;
+}
+
+h1 {
+    position:absolute;
+    z-index: 9999;
+    color:var(--cream);
+    top: 15px;
+    left: 25%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: .15em;
+}
+
+.menu-icon{
+   position:absolute;
+   display: block;
+   width: 75px;
+   cursor: pointer;
+   transform: translateY(-25px);
+}
+
+/* Nav bar end - Larger devices */
+
+/*Footer*/
+footer {
+    margin-top:50px;
+    padding: 20px;
+    font-size: 1em;
+    text-align: left;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: #6f3927;
+    color: var(--cream);
+ }
+
+ footer p{
+    padding-top:20px;
+ }
+
+ footer ul{
+    display:flex;
+ }
+
+ footer ul li{
+    width:25px;
+    padding:10px;
+    height:auto;
+    text-decoration: none;
+ }
+}

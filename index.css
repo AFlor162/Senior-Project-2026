@@ -293,8 +293,6 @@ header{
    padding: 25px;
 }
 
-/* Nav bar end - Larger devices */
-
 h1 {
     position:absolute;
     z-index: 9999;
@@ -314,6 +312,9 @@ h1 {
    cursor: pointer;
    transform: translateY(-25px);
 }
+/* Nav bar end - Larger devices */
+
+
 
  section h3{
    font-weight:bold;
