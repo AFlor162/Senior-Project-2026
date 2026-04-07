@@ -100,7 +100,7 @@ footer p{
 
 @media only screen and (max-width: 768px) {
 
-
+/* Nav bar start - Mobile */
 .nav {
     position: relative;
     background: var(--primary-red);
@@ -161,6 +161,8 @@ h1 {
     font-size: 1.5em;
     letter-spacing: .15em;
 }
+
+/* Nav bar end - Mobile */
 
  #bannerimg {
     width:100%;
@@ -238,8 +240,10 @@ h1 {
 
 @media only screen and (min-width: 768px) {
 
-   #menu-toggle{
-    display: none;
+/* Nav bar start - Larger devices */
+
+#menu-toggle{
+   display: none;
 }
 
 #bannerimg{
@@ -289,6 +293,8 @@ header{
    padding: 25px;
 }
 
+/* Nav bar end - Larger devices */
+
 h1 {
     position:absolute;
     z-index: 9999;
@@ -319,6 +325,8 @@ h1 {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
+    column-gap: 25px;
+    padding: 10px;
  }
 
 #introduction {
@@ -347,16 +355,15 @@ h1 {
    border:5px solid var(--cream);
  }
 
- section #introduction img{
-   width:98%;
-   left:6px;
+ #amenities img{
+   display: block;
+   margin: 0 auto;
+   width:100%;
    height:auto;
-   position:relative;
+   padding-top:25px;
  }
 
- body section{
-   padding: 2px 20px 20px 20px;
- }
+ 
 
  #introduction {
    display:flex;
@@ -368,6 +375,17 @@ h1 {
    line-height: 1.5em;
    font-size: 1em;
    text-align:left;
+ }
+
+
+ #amenities ul {
+   width: fit-content;
+   margin: 0 auto;
+   display:block;
+
+ }
+ #amenities li{
+   display:block;
  }
 
 
