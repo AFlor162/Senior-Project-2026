@@ -186,11 +186,6 @@ h1 {
     text-decoration: underline;
  }
 
-.bodycontent {
-   display:grid;
-   grid-template-rows: 1fr 1fr 1fr;
- }
-
  section img {
    display:none;
  }
@@ -208,9 +203,6 @@ h1 {
    font-weight:bold;
    font-size:1.5em;
  }
-
-
-
 
  strong {
     font-weight: bold;
@@ -317,10 +309,32 @@ h1 {
    transform: translateY(-25px);
 }
 
+ section h3{
+   font-weight:bold;
+   font-size:1.5em;
+   padding-bottom: 20px;
+ }
+
  #maincontent {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
  }
+
+#introduction {
+   grid-column: 1;
+   grid-row: 1;
+}
+
+#amenities {
+   grid-column: 1;
+   grid-row: 2;
+}  
+
+#events {
+   grid-column: 2;
+   grid-row: 1 / span 2;
+}
 
  section h2{
    display:block;
@@ -363,8 +377,11 @@ h1 {
  }
 
  #events img{
-   width:75%;
+   display: block;
+   margin: 0 auto;
+   width:100%;
    height:auto;
+   padding-top:25px;
  }
 
 
