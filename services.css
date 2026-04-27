@@ -79,19 +79,16 @@ html {
     background-color:var(--cream);
 }
 
-h1, h2, h3, li {
+h1, h2, h3, dt, h4 {
     font-family: 'Mona Sans', sans-serif;
     color:var(--primary-red);
+    font-weight: bolder;
 }
 
-h2, h3{
-   font-style: italic;
-}
 
-p {
+p, dd, li {
     font-family: 'Hubot Sans', sans-serif;
     color: var(--primary-red);
-    font-weight: bold;
 }
 
 footer p{
@@ -163,6 +160,11 @@ h1 {
 }
 
 /* Nav bar end - Mobile */
+
+body img{
+    width:250px;
+    height:auto;
+}
 
  footer {
     margin-top:50px;
