@@ -79,7 +79,7 @@ html {
     background-color:var(--cream);
 }
 
-h1, h2, h3, dt, h4 {
+h1, h2, h3, dt, h4, summary {
     font-family: 'Mona Sans', sans-serif;
     color:var(--primary-red);
     font-weight: bolder;
