@@ -79,7 +79,14 @@ html {
     background-color:var(--cream);
 }
 
-h1, h2, h3, dt, h4 {
+html, body {
+   width:100%;
+   margin:0px;
+   padding:0px;
+   overflow-x:hidden;
+}
+
+h1, h2, h3, dt, h4, label {
     font-family: 'Mona Sans', sans-serif;
     color:var(--primary-red);
     font-weight: bolder;
@@ -161,13 +168,99 @@ h1 {
 
 /* Nav bar end - Mobile */
 
+/*dropdown menus*/
+
+#toggle-boarding{
+   display:none;
+}
+
+#boarding{
+   display:none;
+}
+
+#toggle-boarding:checked + label + #boarding{
+   display:block;
+}
+
+#toggle-daycare{
+   display:none;
+}
+
+#daycare{
+   display:none;
+}
+
+#toggle-daycare:checked + label + #daycare{
+   display:block;
+}
+
+#toggle-grooming{
+   display:none;
+}
+
+#grooming{
+   display:none;
+}
+
+#toggle-grooming:checked + label + #grooming{
+   display:block;
+}
+
+#toggle-addons{
+   display:none;
+}
+
+#extras{
+   display:none;
+}
+
+#toggle-addons:checked + label + #extras{
+   display:block;
+}
+
+/*drop down menus end*/
+
+h2{
+   font-size: 2em;
+   text-align: center;
+   padding:25px;
+}
+
+label {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+h2 + img + p{
+   font-size:1.25em;
+   padding: 10px;
+   text-align:left;
+}
+
+p + p{
+   font-size:1.25em;
+   padding: 10px;
+   text-align:left;
+   border-bottom : 5px solid var(--primary-red);
+}
+
+#maincontent {
+   display: grid;
+   place-items: center;
+   width:100%;
+}
+
 body img{
-    width:250px;
-    height:auto;
+    display:none;
 }
 
  footer {
-    margin-top:50px;
     padding: 20px;
     font-size: .75em;
     text-align: left;
