@@ -161,6 +161,12 @@ h1 {
 
 /* Nav bar end - Mobile */
 
+dl {
+   list-style: none;
+}
+
+
+
  footer {
     margin-top:50px;
     padding: 20px;
