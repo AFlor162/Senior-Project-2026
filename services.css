@@ -433,10 +433,26 @@ img {
 }
 
 #toggle-boarding:checked + label + #boarding{
-   display:block;
-   text-align: center;
-   padding:10px;
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+   justify-content: center;
+   padding:25px;
 }
+
+
+#boarding img{
+   padding: 50px;
+}
+
+#boarding div {
+   padding-top:50px;
+   text-align:center;
+}
+
+#boarding div h3, #boarding div h4{
+   margin: 0 0 10px 0;
+}
+
 
 h3 {
    font-size: 1.5em;
@@ -466,16 +482,21 @@ dt {
 #toggle-daycare:checked + label + #daycare{
    display:grid; 
    grid-template-columns: repeat(6,1fr);
-   grid-template-rows: 1fr;
-   padding:10px;
+   justify-items: center;
+   padding:25px;
 }
 
 #daycare img{
-   grid-column-start: 1;
+   padding: 50px;
 }
 
-#daycare h3{
-   grid-column-start: 2;
+#daycare div {
+   padding-top:50px;
+   text-align:center;
+}
+
+#daycare div h3, #daycare div h4{
+   margin: 0 0 10px 0;
 }
 
 
@@ -488,9 +509,23 @@ dt {
 }
 
 #toggle-grooming:checked + label + #grooming{
-   display:block;
-   text-align: center;
-   padding:10px;
+   display:grid; 
+   grid-template-columns: repeat(3,1fr);
+   justify-items: center;
+   padding:25px;
+}
+
+#grooming img{
+   padding: 25px;
+}
+
+#grooming div {
+   padding-top:50px;
+   text-align:center;
+}
+
+#grooming div h3, #boarding div h4{
+   margin: 0 0 10px 0;
 }
 
 #toggle-addons{
@@ -502,9 +537,23 @@ dt {
 }
 
 #toggle-addons:checked + label + #extras{
-   display:block;
-   text-align: center;
-   padding:10px;
+   display:grid; 
+   grid-template-columns: repeat(4,1fr);
+   justify-items: center;
+   padding:25px;
+}
+
+#addons img{
+   padding: 50px;
+}
+
+#addons div {
+   padding-top:50px;
+   text-align:center;
+}
+
+#addons div h3, #boarding div h4{
+   margin: 0 0 10px 0;
 }
 
 /*drop down menus end*/
