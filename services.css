@@ -428,11 +428,8 @@ img {
    display:none;
 }
 
-#boarding{
-   display:none;
-}
 
-#toggle-boarding:checked + label + #boarding{
+#boarding{
    display:grid;
    grid-template-columns: repeat(4, 1fr);
    justify-content: center;
@@ -475,11 +472,8 @@ dt {
    display:none;
 }
 
-#daycare{
-   display:none;
-}
 
-#toggle-daycare:checked + label + #daycare{
+#daycare{
    display:grid; 
    grid-template-columns: repeat(5,1fr);
    justify-items: center;
@@ -504,11 +498,8 @@ dt {
    display:none;
 }
 
-#grooming{
-   display:none;
-}
 
-#toggle-grooming:checked + label + #grooming{
+#grooming{
    display:grid; 
    grid-template-columns: repeat(3,1fr);
    justify-items: center;
@@ -533,11 +524,8 @@ dt {
    display:none;
 }
 
-#extras{
-   display:none;
-}
 
-#toggle-addons:checked + label + #extras{
+#extras{
    display:grid; 
    grid-template-columns: repeat(4,1fr);
    justify-items: center;
@@ -608,7 +596,7 @@ label[for="toggle-addons"] {
 
 h2 + p{
    font-size:1.25em;
-   padding: 25px;
+   padding: 10px;
    text-align:left;
 }
 

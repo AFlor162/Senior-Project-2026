@@ -29,40 +29,47 @@
     <body>
         <h2>Contact</h2>
 
-        Please use the form below to book any appointments. If additional assistance is needed, feel free to check out our <a href ="FAQ.html">FAQ</a> page or call us at the number provided. We also accept communications through email and social media, though response time may vary. 
+        <p>Please use the form below to book any appointments. If additional assistance is needed, feel free to check out our <a href ="FAQ.html">FAQ</a> page or call us at the number provided. We also accept communications through email and social media, though response time may vary.</p>
+    <section id="form">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname">
+                <label for="pname">Pet's Name</label>
+                <input type="text" id="pname" name="pname">
+                <label for ="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <label for ="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="contact">Preferred Contact Method</label>
+                <fieldset value="contact">
+                    <label for="phone">Phone</label>
+                    <input type= "radio" value= "phone">
+                    <label for="email">Email</label>
+                    <input type= "radio" value= "email">
+                </fieldset>
+                <label for="booking">Type of Booking</label>
+                <select value="booking">
+                    <option value="boarding">Boarding</option>
+                    <option value="grooming">Grooming</option>
+                    <option value="daycare">Daycare</option>
+                    <option value="events">Events</option>
+                </select>
+                <label for="appttime">Select Appointment Time</label>
+                <input
+                id="appttime"
+                type="datetime-local"
+                name="appt"
+                min="2026-05-15"
+                max="2100-05-15">
+                <label for="details">Details</label>
+                <textarea id="details" name="details" rows="4" cols="40"></textarea>
 
-        <form>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname">
-            <label for="pname">Pet's Name</label>
-            <input type="text" id="pname" name="pname">
-            <label for ="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone">
-            <label for ="email">Email</label>
-            <input type="email" id="email" name="email">
-            <label for="contact">Preferred Contact Method</label>
-            <fieldset value="contact">
-                <label for="phone">Phone</label>
-                <input type= "radio" value= "phone">
-                <label for="email">Email</label>
-                <input type= "radio" value= "email">
-            </fieldset>
-            <label for="booking">Type of Booking</label>
-            <select value="booking">
-                <option value="boarding">Boarding</option>
-                <option value="grooming">Grooming</option>
-                <option value="daycare">Daycare</option>
-                <option value="events">Events</option>
-            </select>
-            <label for="details">Details</label>
-            <textarea id="details" name="details" rows="4" cols="40"></textarea>
+                <button type="submit">Submit</button>
 
-            <button type="submit">Submit</button>
-
-        </form>
-  
+            </form>
+        </section>    
     </body>
     <footer>
         <p>&copy; 2025 Hospawtality IBPSA Certified 2026</p>

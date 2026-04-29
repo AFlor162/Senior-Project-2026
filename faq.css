@@ -388,7 +388,7 @@ h1 {
 }
 
 #general{
-   display:none;
+   display:block;
 }
 
 #toggle-general:checked + label + #general{
@@ -400,10 +400,6 @@ h1 {
 }
 
 #boarding{
-   display:none;
-}
-
-#toggle-boarding:checked + label + #boarding{
    display:block;
 }
 
@@ -411,11 +407,7 @@ h1 {
    display:none;
 }
 
-#grooming{
-   display:none;
-}
-
-#toggle-grooming:checked + label + #grooming{
+#grooming {
    display:block;
 }
 
@@ -424,15 +416,34 @@ h1 {
 }
 
 #daycare{
-   display:none;
-}
-
-#toggle-daycare:checked + label + #daycare{
    display:block;
 }
 
-h3{
+label[for="toggle-general"] {
    display:none;
+}
+
+label[for="toggle-boarding"] {
+   display:none;
+}
+
+label[for="toggle-grooming"] {
+   display:none;
+}
+
+label[for="toggle-daycare"] {
+   display:none;
+}
+
+h3{
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
 }
 
 
@@ -448,49 +459,6 @@ p{
    padding:25px;
 }
 
-label[for="toggle-general"] {
-   display:block;
-   background-color: var(--primary-red);
-   text-align: center;
-   font-size: 2em;
-   width:100%;
-   padding:15px;
-   margin-bottom:5px;
-   color:var(--cream);
-}
-
-label[for="toggle-boarding"] {
-   display:block;
-   background-color: var(--primary-red);
-   text-align: center;
-   font-size: 2em;
-   width:100%;
-   padding:15px;
-   margin-bottom:5px;
-   color:var(--cream);
-}
-
-label[for="toggle-grooming"] {
-   display:block;
-   background-color: var(--primary-red);
-   text-align: center;
-   font-size: 2em;
-   width:100%;
-   padding:15px;
-   margin-bottom:5px;
-   color:var(--cream);
-}
-
-label[for="toggle-daycare"] {
-   display:block;
-   background-color: var(--primary-red);
-   text-align: center;
-   font-size: 2em;
-   width:100%;
-   padding:15px;
-   margin-bottom:5px;
-   color:var(--cream);
-}
 
 dt{
    font-size:1.50em;
