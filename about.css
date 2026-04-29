@@ -84,9 +84,6 @@ h1, h2, h3, li {
     color:var(--primary-red);
 }
 
-h2, h3{
-   font-style: italic;
-}
 
 p {
     font-family: 'Hubot Sans', sans-serif;

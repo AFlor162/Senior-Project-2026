@@ -266,11 +266,11 @@ nav ul {
    background-color:var(--primary-red);
 
 }
-ul{
+nav ul{
    float:right;
 }
 
-ul li{
+nav ul li{
    display:inline;
    padding-bottom: 5px;
 }
@@ -362,7 +362,6 @@ h1 {
    padding-top:25px;
  }
 
- 
 
  #introduction {
    display:flex;
@@ -376,15 +375,17 @@ h1 {
    text-align:left;
  }
 
-
- #amenities ul {
-   width: fit-content;
-   margin: 0 auto;
-   display:block;
-
+ #amenities{
+   display:grid;
+   grid-template-rows: 1fr, 2fr, 3fr;
  }
- #amenities li{
-   display:block;
+
+ #amenities ul{
+   padding-top:25px;
+   font-weight: bold;
+   text-align: center;
+   font-size: 1.5em;
+   line-height: 1.5em;
  }
 
 
@@ -398,7 +399,16 @@ h1 {
    margin: 0 auto;
    width:100%;
    height:auto;
-   padding-top:25px;
+   padding-top:35px;
+ }
+
+ .eventweek{
+   padding:25px;
+ }
+
+ #events .eventweek h3{
+   padding:25px;
+   font-style: normal;
  }
 
 
