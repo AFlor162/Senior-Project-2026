@@ -481,7 +481,7 @@ dt {
 
 #toggle-daycare:checked + label + #daycare{
    display:grid; 
-   grid-template-columns: repeat(6,1fr);
+   grid-template-columns: repeat(5,1fr);
    justify-items: center;
    padding:25px;
 }
@@ -608,13 +608,13 @@ label[for="toggle-addons"] {
 
 h2 + p{
    font-size:1.25em;
-   padding: 10px;
+   padding: 25px;
    text-align:left;
 }
 
 p + p{
    font-size:1.25em;
-   padding: 10px;
+   padding: 25px;
    text-align:left;
    border-bottom : 5px solid var(--primary-red);
 }

@@ -79,7 +79,7 @@ html {
     background-color:var(--cream);
 }
 
-h1, h2, h3, dt, h4, summary {
+h1, h2, h3, dt, h4, label {
     font-family: 'Mona Sans', sans-serif;
     color:var(--primary-red);
     font-weight: bolder;
@@ -160,15 +160,125 @@ h1 {
 }
 
 /* Nav bar end - Mobile */
-
-dl {
-   list-style: none;
+#toggle-general{
+   display:none;
 }
 
+#general{
+   display:none;
+}
 
+#toggle-general:checked + label + #general{
+   display:block;
+}
+
+#toggle-boarding{
+   display:none;
+}
+
+#boarding{
+   display:none;
+}
+
+#toggle-boarding:checked + label + #boarding{
+   display:block;
+}
+
+#toggle-grooming{
+   display:none;
+}
+
+#grooming{
+   display:none;
+}
+
+#toggle-grooming:checked + label + #grooming{
+   display:block;
+}
+
+#toggle-daycare{
+   display:none;
+}
+
+#daycare{
+   display:none;
+}
+
+#toggle-daycare:checked + label + #daycare{
+   display:block;
+}
+
+h3{
+   display:none;
+}
+
+h2{
+   font-size: 2em;
+   padding:25px;
+   text-align: center;
+}
+
+p{
+   font-size: 1.25em;
+   text-align:center;
+   padding:25px;
+}
+
+label[for="toggle-general"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+label[for="toggle-boarding"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+label[for="toggle-grooming"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+label[for="toggle-daycare"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+dt{
+   font-size:1.50em;
+   padding:25px;
+}
+
+dd{
+   font-size:1.25em;
+   padding:25px;
+}
 
  footer {
-    margin-top:50px;
     padding: 20px;
     font-size: .75em;
     text-align: left;
@@ -273,9 +383,127 @@ h1 {
 
 /* Nav bar end - Larger devices */
 
+#toggle-general{
+   display:none;
+}
+
+#general{
+   display:none;
+}
+
+#toggle-general:checked + label + #general{
+   display:block;
+}
+
+#toggle-boarding{
+   display:none;
+}
+
+#boarding{
+   display:none;
+}
+
+#toggle-boarding:checked + label + #boarding{
+   display:block;
+}
+
+#toggle-grooming{
+   display:none;
+}
+
+#grooming{
+   display:none;
+}
+
+#toggle-grooming:checked + label + #grooming{
+   display:block;
+}
+
+#toggle-daycare{
+   display:none;
+}
+
+#daycare{
+   display:none;
+}
+
+#toggle-daycare:checked + label + #daycare{
+   display:block;
+}
+
+h3{
+   display:none;
+}
+
+
+h2{
+   font-size: 2em;
+   padding:25px;
+   text-align: center;
+}
+
+p{
+   font-size: 1.25em;
+   text-align:center;
+   padding:25px;
+}
+
+label[for="toggle-general"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+label[for="toggle-boarding"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+label[for="toggle-grooming"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+label[for="toggle-daycare"] {
+   display:block;
+   background-color: var(--primary-red);
+   text-align: center;
+   font-size: 2em;
+   width:100%;
+   padding:15px;
+   margin-bottom:5px;
+   color:var(--cream);
+}
+
+dt{
+   font-size:1.50em;
+   padding:25px;
+}
+
+dd{
+   font-size:1.25em;
+   padding:25px;
+}
+
 /*Footer*/
 footer {
-    margin-top:50px;
     padding: 20px;
     font-size: 1em;
     text-align: left;
